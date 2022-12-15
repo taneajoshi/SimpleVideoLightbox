@@ -1,84 +1,4 @@
-.d-none {
-    display: none;
-}
-
-/* LIGHTBOX POPUP STRUCTURE */
-.lightbox-modal-wrapper .lightbox-modal-content {
-    display: inline-block;
-    max-width: 900px;
-    margin: 0 auto;
-    left: 50%;
-    padding: 0 20px;
-    max-height: 60%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.lightbox-modal-wrapper iframe,
-.lightbox-modal-wrapper .lightbox-modal-content {
-    position: absolute;
-    width: 100%;
-}
-
-.lightbox-modal-wrapper,
-.lightbox-modal-wrapper .iframe-wrapper {
-    width: 100%;
-}
-
-.lightbox-modal-wrapper,
-.lightbox-modal-wrapper iframe {
-    height: 100%;
-}
-
-.lightbox-modal-wrapper .iframe-wrapper {
-    position: relative;
-    height: 0;
-    background: #000000;
-    padding-bottom: 56.25%;
-}
-
-.lightbox-modal-wrapper {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 9999;
-}
-
-.lightbox-modal-wrapper iframe {
-    top: 0;
-    left: 0;
-    border: none;
-}
-
-.lightbox-modal-wrapper .close-btn {
-    position: absolute;
-    top: -65px;
-    font-size: 60px;
-    font-weight: 200;
-    opacity: 0.2;
-    color: #ffffff;
-    right: 0;
-    cursor: pointer;
-    transition: all 0.3s linear;
-}
-
-.lightbox-modal-wrapper .close-btn:hover {
-    opacity: 1;
-}
-
-@media(max-height: 400px) and (max-width: 991px) {
-    .lightbox-modal-wrapper .lightbox-modal-content {
-        max-width: 400px;
-    }
-
-    .lightbox-modal-wrapper .close-btn {
-        font-size: 40px;
-        top: -50px;
-    }
-}
-
-
-/* Extra code for basic styling of the page */
+/* EXTRA STYLING for basic styling of the page */
 html,
 body {
     font-size: 16px;
@@ -177,4 +97,89 @@ footer p {
 .video-btn:before {
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* EXTRA STYLING ENDS */
+
+/* ===================================== */
+/* ============ MAIN STYLING ===========*/
+/* ===================================== */
+
+.d-none {
+    display: none;
+}
+
+/* LIGHTBOX POPUP STRUCTURE */
+.lightbox-modal-wrapper .lightbox-modal-content {
+    display: inline-block;
+    max-width: 900px;
+    margin: 0 auto;
+    left: 50%;
+    padding: 0 20px;
+    max-height: 60%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lightbox-modal-wrapper iframe,
+.lightbox-modal-wrapper .lightbox-modal-content {
+    position: absolute;
+    width: 100%;
+}
+
+.lightbox-modal-wrapper,
+.lightbox-modal-wrapper .iframe-wrapper {
+    width: 100%;
+}
+
+.lightbox-modal-wrapper,
+.lightbox-modal-wrapper iframe {
+    height: 100%;
+}
+
+.lightbox-modal-wrapper .iframe-wrapper {
+    position: relative;
+    height: 0;
+    background: #000000;
+    padding-bottom: 56.25%;
+}
+
+.lightbox-modal-wrapper {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+}
+
+.lightbox-modal-wrapper iframe {
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+.lightbox-modal-wrapper .close-btn {
+    position: absolute;
+    top: -65px;
+    font-size: 60px;
+    font-weight: 200;
+    opacity: 0.2;
+    color: #ffffff;
+    right: 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.lightbox-modal-wrapper .close-btn:hover {
+    opacity: 1;
+}
+
+@media(max-height: 400px) and (max-width: 991px) {
+    .lightbox-modal-wrapper .lightbox-modal-content {
+        max-width: 400px;
+    }
+
+    .lightbox-modal-wrapper .close-btn {
+        font-size: 40px;
+        top: -50px;
+    }
 }
