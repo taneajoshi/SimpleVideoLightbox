@@ -74,7 +74,7 @@ footer p {
     background: radial-gradient(#ffffff 1%, #A5A19F 80%) !important;
     border: 8.5px solid #005581;
     border-radius: 50%;
-    transition: all 0.3s linear;
+    transition: opacity 0.3s linear;
     color: transparent;
 }
 
@@ -166,7 +166,7 @@ footer p {
     color: #ffffff;
     right: 0;
     cursor: pointer;
-    transition: all 0.3s linear;
+    transition: opacity 0.3s linear;
 }
 
 .lightbox-modal-wrapper .close-btn:hover {
