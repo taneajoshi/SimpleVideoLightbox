@@ -1,4 +1,6 @@
-.d-none {display: none;}
+.d-none {
+    display: none;
+}
 
 /* LIGHTBOX POPUP STRUCTURE */
 .lightbox-modal-wrapper .lightbox-modal-content {
@@ -6,7 +8,7 @@
     max-width: 900px;
     margin: 0 auto;
     left: 50%;
-	padding: 0 20px;
+    padding: 0 20px;
     max-height: 60%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -14,30 +16,31 @@
 
 .lightbox-modal-wrapper iframe,
 .lightbox-modal-wrapper .lightbox-modal-content {
-	position: absolute; 
+    position: absolute;
     width: 100%;
 }
 
 .lightbox-modal-wrapper,
-.lightbox-modal-wrapper .iframe-wrapper
- { width: 100%; }
+.lightbox-modal-wrapper .iframe-wrapper {
+    width: 100%;
+}
 
- .lightbox-modal-wrapper,
- .lightbox-modal-wrapper iframe  {
+.lightbox-modal-wrapper,
+.lightbox-modal-wrapper iframe {
     height: 100%;
- }
+}
 
 .lightbox-modal-wrapper .iframe-wrapper {
-	position: relative;
+    position: relative;
     height: 0;
-	background: #000000;
+    background: #000000;
     padding-bottom: 56.25%;
 }
 
 .lightbox-modal-wrapper {
-	position: fixed;
+    position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0, 0, 0, 0.85);
     z-index: 9999;
 }
 
@@ -48,25 +51,26 @@
 }
 
 .lightbox-modal-wrapper .close-btn {
-    position: absolute; 
+    position: absolute;
     top: -65px;
     font-size: 60px;
     font-weight: 200;
     opacity: 0.2;
     color: #ffffff;
     right: 0;
-	cursor: pointer;
+    cursor: pointer;
     transition: all 0.3s linear;
 }
 
-.lightbox-modal-wrapper .close-btn:hover{
-	opacity: 1;
+.lightbox-modal-wrapper .close-btn:hover {
+    opacity: 1;
 }
 
 @media(max-height: 400px) and (max-width: 991px) {
     .lightbox-modal-wrapper .lightbox-modal-content {
         max-width: 400px;
     }
+
     .lightbox-modal-wrapper .close-btn {
         font-size: 40px;
         top: -50px;
@@ -75,10 +79,11 @@
 
 
 /* Extra code for basic styling of the page */
-html, body {
+html,
+body {
     font-size: 16px;
     height: 100%;
-    font-family: Open Sans,Arial,sans-serif;
+    font-family: Open Sans, Arial, sans-serif;
 }
 
 body {
@@ -136,24 +141,25 @@ footer {
 footer p {
     margin: 0;
 }
+
 /* Styling the lightbox button. Depends on project to project */
 .video-btn {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-	height: 145px;
+    height: 145px;
     width: 145px;
     margin: 0 auto;
-	background: radial-gradient(#ffffff 1%, #A5A19F 80%) !important;
+    background: radial-gradient(#ffffff 1%, #A5A19F 80%) !important;
     border: 8.5px solid #005581;
     border-radius: 50%;
-	transition: all 0.3s linear;
+    transition: all 0.3s linear;
     color: transparent;
 }
 
 .video-btn:before {
-	content: '';
+    content: '';
     position: absolute;
     width: 0px;
     height: 0px;
@@ -164,9 +170,11 @@ footer p {
     left: 57%;
 }
 
-.video-btn:hover { opacity: 0.85; }
+.video-btn:hover {
+    opacity: 0.85;
+}
 
-.video-btn:before  {
+.video-btn:before {
     top: 50%;
     transform: translate(-50%, -50%);
 }
